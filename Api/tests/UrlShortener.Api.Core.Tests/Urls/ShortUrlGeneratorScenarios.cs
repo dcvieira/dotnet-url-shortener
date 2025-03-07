@@ -1,15 +1,11 @@
 ﻿using FluentAssertions;
 using UrlShortener.Core;
+using UrlShortener.Core.Urls;
 
 
-namespace UrlShortener.Api.Core.Tests;
+namespace UrlShortener.Api.Core.Tests.Urls;
 public class ShortUrlGeneratorScenarios
 {
-    // Test List
-    // Check if the end of range is gt start
-    // Unique tokens 
-    // Accept multiple Ranges
-    // Range as type
 
     [Fact]
     public void Should_return_short_url_for_zero()
