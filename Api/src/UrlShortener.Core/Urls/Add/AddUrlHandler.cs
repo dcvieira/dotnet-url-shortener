@@ -15,7 +15,7 @@ public class AddUrlHandler
     public async Task<Result<AddUrlResponse>> HandleAsync(AddUrlRequest request, CancellationToken cancellationToken)
     {
         if(string.IsNullOrWhiteSpace(request.CreatedBy))
-            return Errors.MissingCreatedBy;
+           return Errors.MissingCreatedBy;
 
 
         var shortedUrl = new ShortenedUrl(request.LongUrl,
